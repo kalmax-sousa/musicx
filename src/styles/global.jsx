@@ -8,6 +8,7 @@ export default createGlobalStyle`
 
     :root {
     --primary: #DA70D6;
+    --black: #000000;
     --gray: #1C1C1C;
     --blackLighter: #9E9E9E;
     --grayLight: #F5F5F5;
@@ -26,4 +27,10 @@ export default createGlobalStyle`
     a {
     color: inherit;
     } 
+
+    #root{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
 `;

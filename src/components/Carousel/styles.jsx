@@ -30,38 +30,6 @@ export const ExtraLink = styled.span`
   }
 `;
 
-export const VideoCardList = styled.ul`
-  margin: 0;
-  padding-left: 0;
-  padding-bottom: 32px;
-  list-style: none;
-  display: flex;
-  overflow-x: auto;
-  flex-direction: row;
-  
-  &::-webkit-scrollbar{
-    height: 8px;
-  }
-  &::-webkit-scrollbar-thumb{
-    background-color: var(--primary); 
-    border-radius: 7px;
-  }
-  &::-webkit-scrollbar-track{
-    background-color: #000000;
-    border-radius: 7px;
-  }
-
-  li {
-    margin-right: 16px;
-  }
-
-  @media (max-width: 800px) {
-    &::-webkit-scrollbar{
-    height: 1px;
-  }
-  }
-`;
-
 export const VideoCardGroupContainer = styled.section`
   color: white;
   min-height: 197px;

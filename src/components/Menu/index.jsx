@@ -1,19 +1,21 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 import Logo from '../../assets/img/Logo.png';
 import Headphones from '../../assets/img/headphones.svg';
-import {Container, Button, LogoTag, Navegation} from './styles';
+import {FiPlus} from 'react-icons/fi';
+import {Container, Button, LogoImage, Navegation} from './styles';
 
 function Menu () {
     return (
         <Container>
             <Navegation>
-                <a href="/">
-                    <LogoTag src={Logo} alt="Musicx logo"/>
-                </a>
+                <Link to="/">
+                    <LogoImage src={Logo} alt="Musicx logo"/>
+                </Link>
 
                 <img src={Headphones} alt="headphones"/>
 
-                <Button as="a" className="buttonLink" href="/">Novo vídeo</Button>
+                <Button as={Link} to="/cadastro/video"> <FiPlus /> Novo vídeo</Button>
             </Navegation>
         </Container>
     );
