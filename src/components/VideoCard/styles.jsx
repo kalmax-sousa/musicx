@@ -17,16 +17,35 @@ export const VideoCardContainer = styled.a`
   position: relative;
   display: flex;
   align-items: flex-end;
-  padding: 16px;
-
-  transition: opacity .3s;
+  margin: 20px 0px;
   
-  &:hover,
-  &:focus {
-    opacity: .5;
+
+  transition: opacity .3s, transform .6s;
+  
+  &:hover
+   {
+    opacity: .8;
+    transform: scale(1.09);
+
+    >a{
+      display: inline;
+    }
   }
   
   &:not(:first-child) {
     margin-left: 20px;
+  }
+`;
+
+export const Title = styled.a`
+  width: 100vw;
+  padding: 14px;
+  color: var(--white);
+  display: none;
+  position: absolute;
+  transition: .3s;
+
+  @media (max-width: 800px){
+    display: inline;
   }
 `;

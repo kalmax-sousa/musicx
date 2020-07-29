@@ -1,7 +1,6 @@
 import React from 'react';
 import Menu from '../Menu';
 import Footer from '../Footer';
-import GlobalStyles from '../../styles/global';
 import {Main} from './styles'
 
 function PageDefault({children}) {
@@ -13,7 +12,6 @@ function PageDefault({children}) {
                     {children}
                 </Main>
             <Footer />
-            <GlobalStyles />
         </>
 
     );

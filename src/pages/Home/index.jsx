@@ -4,11 +4,11 @@ import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 import Footer from '../../components/Footer';
 import dadosIniciais from '../../data/dados_iniciais.json';
-import GlobalStyles from '../../styles/global';
+import {Container} from './styles';
 
 function Home() {
   return (
-    <div style={{ background: "#141414"}}>
+    <Container>
       <Menu />
 
       <BannerMain 
@@ -43,8 +43,7 @@ function Home() {
       />      
 
       <Footer />
-      <GlobalStyles />
-    </div>
+    </Container>
   );
 }
 
