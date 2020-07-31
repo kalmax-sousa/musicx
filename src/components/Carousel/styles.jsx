@@ -14,6 +14,7 @@ export const Title = styled.h3`
 
   @media (max-width: 800px) {
     font-size: 18px;
+    margin-bottom: 9px;
     padding: 10px;
   }
 `;
@@ -25,8 +26,7 @@ export const ExtraLink = styled.span`
   
   @media (max-width: 800px) {
     display: block;
-    margin-bottom: 16px;
-    margin-left: 0;
+    margin-left: 5px;
   }
 `;
 
