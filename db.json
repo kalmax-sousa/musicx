@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+            "id": 1,
+            "name": "Orgulho Negro",
+            "description": "Músicas de Resistência",
+            "color": "#808080"
+        },
+        {
+            "id": 2,
+            "name": "Amor no Ar",
+            "description": "As músicas românticas mais envolventes",
+            "color": "#FA8072"
+        }
+    ]
+}
