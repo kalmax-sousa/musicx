@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const VideoCardContainer = styled.a`
   border: 2px solid;
-  border-radius: 4px;
   text-decoration: none;
   overflow: hidden;
   cursor: pointer;
@@ -13,7 +12,6 @@ export const VideoCardContainer = styled.a`
   background-image: ${({ url }) => `url(${url})`};
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -25,7 +23,7 @@ export const VideoCardContainer = styled.a`
     opacity: .8;
     transform: scale(1.09);
 
-    >a{
+    >p{
       display: inline;
     }
   }
@@ -35,12 +33,15 @@ export const VideoCardContainer = styled.a`
   }
 `;
 
-export const Title = styled.a`
-  width: 100vw;
+export const Title = styled.p`
+  margin: 0;
+  box-sizing: border-box;
+  width: 298px;
   padding: 14px;
   color: var(--white);
   display: none;
   position: absolute;
+  bottom: 0;
   transition: .3s;
 
   @media (max-width: 800px){

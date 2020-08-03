@@ -1,246 +1,252 @@
 {
-    "categorias": [
-        {
-            "id": 1,
-            "title": "Orgulho Negro",
-            "description": "Músicas de Resistência",
-            "color": "#808080"
-        },
-        {
-            "id": 2,
-            "title": "Amor no Ar",
-            "description": "As músicas românticas mais envolventes",
-            "color": "#FA8072"
-        },
-        {
-            "id": 3,
-            "title": "Dance Junto",
-            "description": "Músicas com ritmo envolvente",
-            "color": "#1E90FF"
-        },
-        {
-            "id": 4,
-            "title": "Good Vibes",
-            "description": "Os ritmos mais relaxantes pra aproveitar o dia",
-            "color": "orange"
-        },
-        {
-            "id": 5,
-            "title": "Gospel",
-            "description": "Para adorar à Deus",
-            "color": "red"
-        },
-        {
-            "id": 6,
-            "title": "Melancolia",
-            "description": "Para aqueles dias de tristeza",
-            "color": "#6b5be2"
-        }
-    ],
-
-    "videos": [
-        {
-            "id": 1,
-            "categoriaId": 1,
-            "title": "AmarElo - Emicida feat. Majur e Pabllo Vittar",
-            "url": "https://www.youtube.com/watch?v=PTDgP3BDPIU"
-        },
-        {
-            "id": 2,
-            "categoriaId": 1,
-            "title": "Diga Não - Bia Ferreira",
-            "url": "https://www.youtube.com/watch?v=HyusmerTeUM"
-        },
-        {
-            "id": 3,
-            "categoriaId": 1,
-            "title": "Respeite a Minha Pele - Marvyn",
-            "url": "https://www.youtube.com/watch?v=ZBWKxgQoyyo"
-        },
-        {
-            "id": 4,
-            "categoriaId": 1,
-            "title": "O Bicho - Doralyce",
-            "url": "https://www.youtube.com/watch?v=o80cDm95bdQ"
-        },
-        {
-            "id": 5,
-            "categoriaId": 1,
-            "title": "Levante a Bandeira do Amor - Bia Ferreira",
-            "url": "https://www.youtube.com/watch?v=b4p2OxNh9R4"
-        },
-        {
-            "id": 6,
-            "categoriaId": 1,
-            "title": "Ponta de Lança - Rincon Sapiências",
-            "url": "https://www.youtube.com/watch?v=vau8mq3KcRw"
-        },
-        {
-            "id": 7,
-            "categoriaId": 1,
-            "title": "Bluesman - Baco Exu do Blues",
-            "url": "https://www.youtube.com/watch?v=82pH37Y0qC8"
-        },
-        {
-            "id": 8,
-            "categoriaId": 1,
-            "title": "Identidade  Jorge Aragão",
-            "url": "https://www.youtube.com/watch?v=FT6txAqRfok"
-        },
-        {
-            "id": 9,
-            "categoriaId": 1,
-            "title": "Acalanto - Luedji Luna",
-            "url": "https://www.youtube.com/watch?v=ZRNcuW91sIU"
-        },
-        {
-            "id": 10,
-            "categoriaId": 2,
-            "title": "Partilhar - Rubel",
-            "url": "https://www.youtube.com/watch?v=ivHE7pQEEHI"
-        },
-        {
-            "id": 11,
-            "categoriaId": 2,
-            "title": "Nos - ANAVITÓRIA",
-            "url": "https://www.youtube.com/watch?v=DMR8QRkeGhE"         },
-        {
-            "id": 12,
-            "categoriaId": 2,
-            "title": "Perfect - Ed Sheeran",
-            "url": "https://www.youtube.com/watch?v=2Vv-BfVoq4g"
-        },
-        {
-            "id": 13,
-            "categoriaId": 2,
-            "title": "Naise - Nina Oliveira",
-            "url": "https://www.youtube.com/watch?v=zYnGTt701t8"
-        },
-        {
-            "id": 14,
-            "categoriaId": 2,
-            "title": "Sem Nome, Mas com Endereço  Liniker e os Caramelows",
-            "url": "https://www.youtube.com/watch?v=3ivpWVi79tc"
-        },
-        {
-            "id": 15,
-            "categoriaId": 2,
-            "title": "Sei - Nando Reis",
-            "url": "https://www.youtube.com/watch?v=aWVGIlaohKM"
-        },
-        {
-            "id": 16,
-            "categoriaId": 2,
-            "title": "Oração - A Banda Mais Bonita da Cidade",
-            "url": "https://www.youtube.com/watch?v=QW0i1U4u0KE"
-        },
-        {
-            "id": 17,
-            "categoriaId": 3,
-            "title": "Evapora - IZA, Ciara and Major Lazer",
-            "url": "https://www.youtube.com/watch?v=c0Dl8JbNzCo"
-        },
-        {
-            "id": 18,
-            "categoriaId": 3,
-            "title": "Classic - MKTO",
-            "url": "https://www.youtube.com/watch?v=4Ba_qTPA4Ds"
-        },
-        {
-            "id": 19,
-            "categoriaId": 3,
-            "title": "Hey Mama - David Guetta feat.  Nicki Minaj, Bebe Rexha & Afrojack",
-            "url": "https://www.youtube.com/watch?v=uO59tfQ2TbA"
-        },
-        {
-            "id": 20,
-            "categoriaId": 3,
-            "title": "Saideira - Skank",
-            "url": "https://www.youtube.com/watch?v=gj8nFn061Co"
-        },
-        {
-            "id": 21,
-            "categoriaId": 4,
-            "title": "Passarinhos - Emicida feat. Vanessa da  Mata",
-            "url": "https://www.youtube.com/watch?v=IJcmLHjjAJ4"
-        },
-        {
-            "id": 22,
-            "categoriaId": 4,
-            "title": "Banzo - Nina Oliveira feat. Jota.Pê",
-            "url": "https://www.youtube.com/watch?v=GrDBpTN0gSw"
-        },
-        {
-            "id": 23,
-            "categoriaId": 4,
-            "title": "Tchubaruba - Mallu Magalhães",
-            "url": "https://www.youtube.com/watch?v=syAjQGziSEI"
-        },
-        {
-            "id": 24,
-            "categoriaId": 4,
-            "title": "What a Wonderful World - Tiago Iorc",
-            "url": "https://www.youtube.com/watch?v=om15v9Us574"
-        },
-        {
-            "id": 25,
-            "categoriaId": 5,
-            "title": "Ninguém Explica Deus - Preto no Branco feat. Gabriela Rocha",
-            "url": "https://www.youtube.com/watch?v=LYsaKn8FRhc"
-        },
-        {
-            "id": 26,
-            "categoriaId": 5,
-            "title": "Oceanos (Onde Meus Pés Podem Falhar) - Ana Nóbrega",
-            "url": "https://www.youtube.com/watch?v=1XqHlWsMThA"
-        },
-        {
-            "id": 27,
-            "categoriaId": 5,
-            "title": "Minha Vez - Ton Craft e Livinho",
-            "url": "https://www.youtube.com/watch?v=axFvR3GcJC8"
-        },
-        {
-            "id": 28,
-            "categoriaId": 5,
-            "title": "Pra Onde Iremos Nós - Gabriela Rocha",
-            "url": "https://www.youtube.com/watch?v=BGmdKocUl0E"
-        },
-        {
-            "id": 29,
-            "categoriaId": 5,
-            "title": "Girassol - Priscilla Alantara e Whinderson Nunes",
-            "url": "https://www.youtube.com/watch?v=f7RS8IEj108"
-        },
-        {
-            "id": 30,
-            "categoriaId": 6,
-            "title": "Sozinho - Caetano Veloso",
-            "url": "https://www.youtube.com/watch?v=j9UbE1slI-Q"
-        },
-        {
-            "id": 31,
-            "categoriaId": 6,
-            "title": "Socorro - Arnaldo Antunes",
-            "url": "https://www.youtube.com/watch?v=s4LIVA5-Yt0"
-        },
-        {
-            "id": 32,
-            "categoriaId": 6,
-            "title": "Cecília - ANAVITÓRIA",
-            "url": "https://www.youtube.com/watch?v=chkclMDAgdM"
-        },
-        {
-            "id": 33,
-            "categoriaId": 6,
-            "title": "Vou Te Encontrar - Paulo Miklos",
-            "url": "https://www.youtube.com/watch?v=nTgP_xjGWvw"
-        },
-        {
-            "id": 34,
-            "categoriaId": 6,
-            "title": "Não - Tim Bernardes",
-            "url": "https://www.youtube.com/watch?v=mki_N2FMvH0"
-        }
-    ]
+  "categorias": [
+    {
+      "id": 1,
+      "title": "Orgulho Negro",
+      "description": "Músicas de Resistência",
+      "color": "#808080"
+    },
+    {
+      "id": 2,
+      "title": "Amor no Ar",
+      "description": "As músicas românticas mais envolventes",
+      "color": "#FA8072"
+    },
+    {
+      "id": 3,
+      "title": "Dance Junto",
+      "description": "Músicas com ritmo envolvente",
+      "color": "#1E90FF"
+    },
+    {
+      "id": 4,
+      "title": "Good Vibes",
+      "description": "Os ritmos mais relaxantes pra aproveitar o dia",
+      "color": "orange"
+    },
+    {
+      "id": 5,
+      "title": "Gospel",
+      "description": "Para adorar à Deus",
+      "color": "red"
+    },
+    {
+      "id": 6,
+      "title": "Melancolia",
+      "description": "Para aqueles dias de tristeza",
+      "color": "#6b5be2"
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "title": "AmarElo - Emicida feat. Majur e Pabllo Vittar",
+      "url": "https://www.youtube.com/watch?v=PTDgP3BDPIU"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "title": "Diga Não - Bia Ferreira",
+      "url": "https://www.youtube.com/watch?v=HyusmerTeUM"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "title": "Respeite a Minha Pele - Marvyn",
+      "url": "https://www.youtube.com/watch?v=ZBWKxgQoyyo"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "title": "O Bicho - Doralyce",
+      "url": "https://www.youtube.com/watch?v=o80cDm95bdQ"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "title": "Levante a Bandeira do Amor - Bia Ferreira",
+      "url": "https://www.youtube.com/watch?v=b4p2OxNh9R4"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "title": "Ponta de Lança - Rincon Sapiências",
+      "url": "https://www.youtube.com/watch?v=vau8mq3KcRw"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "title": "Bluesman - Baco Exu do Blues",
+      "url": "https://www.youtube.com/watch?v=82pH37Y0qC8"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "title": "Identidade  Jorge Aragão",
+      "url": "https://www.youtube.com/watch?v=FT6txAqRfok"
+    },
+    {
+      "id": 9,
+      "categoriaId": 1,
+      "title": "Acalanto - Luedji Luna",
+      "url": "https://www.youtube.com/watch?v=ZRNcuW91sIU"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "title": "Partilhar - Rubel",
+      "url": "https://www.youtube.com/watch?v=ivHE7pQEEHI"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "title": "Nos - ANAVITÓRIA",
+      "url": "https://www.youtube.com/watch?v=DMR8QRkeGhE"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "title": "Perfect - Ed Sheeran",
+      "url": "https://www.youtube.com/watch?v=2Vv-BfVoq4g"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "title": "Naise - Nina Oliveira",
+      "url": "https://www.youtube.com/watch?v=zYnGTt701t8"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "title": "Sem Nome, Mas com Endereço  Liniker e os Caramelows",
+      "url": "https://www.youtube.com/watch?v=3ivpWVi79tc"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "title": "Sei - Nando Reis",
+      "url": "https://www.youtube.com/watch?v=aWVGIlaohKM"
+    },
+    {
+      "id": 16,
+      "categoriaId": 2,
+      "title": "Oração - A Banda Mais Bonita da Cidade",
+      "url": "https://www.youtube.com/watch?v=QW0i1U4u0KE"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "title": "Evapora - IZA, Ciara and Major Lazer",
+      "url": "https://www.youtube.com/watch?v=c0Dl8JbNzCo"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "title": "Classic - MKTO",
+      "url": "https://www.youtube.com/watch?v=4Ba_qTPA4Ds"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "title": "Hey Mama - David Guetta feat.  Nicki Minaj, Bebe Rexha & Afrojack",
+      "url": "https://www.youtube.com/watch?v=uO59tfQ2TbA"
+    },
+    {
+      "id": 20,
+      "categoriaId": 3,
+      "title": "Saideira - Skank",
+      "url": "https://www.youtube.com/watch?v=gj8nFn061Co"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "title": "Passarinhos - Emicida feat. Vanessa da  Mata",
+      "url": "https://www.youtube.com/watch?v=IJcmLHjjAJ4"
+    },
+    {
+      "id": 22,
+      "categoriaId": 4,
+      "title": "Banzo - Nina Oliveira feat. Jota.Pê",
+      "url": "https://www.youtube.com/watch?v=GrDBpTN0gSw"
+    },
+    {
+      "id": 23,
+      "categoriaId": 4,
+      "title": "Tchubaruba - Mallu Magalhães",
+      "url": "https://www.youtube.com/watch?v=syAjQGziSEI"
+    },
+    {
+      "id": 24,
+      "categoriaId": 4,
+      "title": "What a Wonderful World - Tiago Iorc",
+      "url": "https://www.youtube.com/watch?v=om15v9Us574"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "title": "Ninguém Explica Deus - Preto no Branco feat. Gabriela Rocha",
+      "url": "https://www.youtube.com/watch?v=LYsaKn8FRhc"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "title": "Oceanos (Onde Meus Pés Podem Falhar) - Ana Nóbrega",
+      "url": "https://www.youtube.com/watch?v=1XqHlWsMThA"
+    },
+    {
+      "id": 27,
+      "categoriaId": 5,
+      "title": "Minha Vez - Ton Craft e Livinho",
+      "url": "https://www.youtube.com/watch?v=axFvR3GcJC8"
+    },
+    {
+      "id": 28,
+      "categoriaId": 5,
+      "title": "Pra Onde Iremos Nós - Gabriela Rocha",
+      "url": "https://www.youtube.com/watch?v=BGmdKocUl0E"
+    },
+    {
+      "id": 29,
+      "categoriaId": 5,
+      "title": "Girassol - Priscilla Alantara e Whinderson Nunes",
+      "url": "https://www.youtube.com/watch?v=f7RS8IEj108"
+    },
+    {
+      "id": 30,
+      "categoriaId": 6,
+      "title": "Sozinho - Caetano Veloso",
+      "url": "https://www.youtube.com/watch?v=j9UbE1slI-Q"
+    },
+    {
+      "id": 31,
+      "categoriaId": 6,
+      "title": "Socorro - Arnaldo Antunes",
+      "url": "https://www.youtube.com/watch?v=s4LIVA5-Yt0"
+    },
+    {
+      "id": 32,
+      "categoriaId": 6,
+      "title": "Cecília - ANAVITÓRIA",
+      "url": "https://www.youtube.com/watch?v=chkclMDAgdM"
+    },
+    {
+      "id": 33,
+      "categoriaId": 6,
+      "title": "Vou Te Encontrar - Paulo Miklos",
+      "url": "https://www.youtube.com/watch?v=nTgP_xjGWvw"
+    },
+    {
+      "id": 34,
+      "categoriaId": 6,
+      "title": "Não - Tim Bernardes",
+      "url": "https://www.youtube.com/watch?v=mki_N2FMvH0"
+    },
+    {
+      "title": "All Star - Nando Reis",
+      "url": "https://www.youtube.com/watch?v=C4HeeSug3J8",
+      "categoriaId": 2,
+      "id": 35
+    }
+  ]
 }

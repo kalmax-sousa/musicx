@@ -12,7 +12,7 @@ function useForm(valoresIniciais) {
 
   function handleChange(info) {
     setValue(
-      info.target.getAttribute('title'),
+      info.target.getAttribute('name'),
       info.target.value,
     );
   }

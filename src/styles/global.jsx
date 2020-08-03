@@ -8,6 +8,7 @@ export default createGlobalStyle`
 
     :root {
     --primary: #DA70D6;
+    --purpleDark: #C97EF4;
     --black: #000000;
     --gray: #1C1C1C;
     --blackLighter: #9E9E9E;

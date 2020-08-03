@@ -2,6 +2,24 @@ import config from '../config';
 
 const URL_CATEGORIES = `${config.URL}/categorias`;
 
+function createCategory(category) {
+  return fetch(`${URL_CATEGORIES}`, {
+    method: 'POST',
+    headers: {
+      'Content-type': 'application/json',
+    },
+    body: JSON.stringify(category),
+  })
+    .then(async (respostaDoServidor) => {
+      if (respostaDoServidor.ok) {
+        const resposta = await respostaDoServidor.json();
+        return resposta;
+      }
+
+      throw new Error('Não foi possível cadastrar o vídeo  :(');
+    });
+}
+
 function getAll() {
   return fetch(`${URL_CATEGORIES}`)
     .then(async (respostaDoServidor) => {
@@ -28,4 +46,5 @@ function getAllWithVideos() {
 export default {
   getAllWithVideos,
   getAll,
+  createCategory,
 };

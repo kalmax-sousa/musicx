@@ -17,7 +17,7 @@ export const LogoImage = styled.img`
     }
 `;
 
-export const  Navegation = styled.nav`
+export const Navegation = styled.nav`
     width: 100%;
     height: 94px;
     z-index: 100;

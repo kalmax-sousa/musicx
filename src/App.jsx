@@ -4,7 +4,7 @@ import GlobalStyles from './styles/global';
 
 const App = () => (
   <>
-    <Routes /> 
+    <Routes />
     <GlobalStyles />
   </>
 );

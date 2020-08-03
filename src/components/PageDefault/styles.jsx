@@ -10,6 +10,10 @@ const Main = styled.main`
     ${({ paddingAll }) => css`
         padding: ${paddingAll};
     `};
+
+    @media (max-width: 800px){
+        padding-top: 15px;
+    }
 `;
 
 export default Main;

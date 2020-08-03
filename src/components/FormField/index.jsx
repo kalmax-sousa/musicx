@@ -59,7 +59,6 @@ FormField.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   type: PropTypes.string,
-  // eslint-disable-next-line react/require-default-props
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   suggestions: PropTypes.arrayOf(PropTypes.string),

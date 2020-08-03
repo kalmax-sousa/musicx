@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import useForm from '../../../hooks/useForm';
 import FormField from '../../../components/FormField';
 import videosRepository from '../../../repositories/videos';
 import categoriesRepository from '../../../repositories/categorias';
+import ButtonForm from '../../../components/ButtonForm';
+import GoHome from '../../../components/GoHome';
 
 function CadastroVideo() {
   const history = useHistory();
   const [categorias, setCategorias] = useState([]);
   const categoryTitles = categorias.map(({ title }) => title);
   const { handleChange, values } = useForm({
-    título: '',
+    title: '',
     url: '',
-    categoria: '',
+    categoriaId: '',
   });
 
   useEffect(() => {
@@ -36,10 +38,10 @@ function CadastroVideo() {
         videosRepository.createVideo({
           title: values.title,
           url: values.url,
-          categoriaId: categoryFinded,
+          categoriaId: categoryFinded.id,
         })
-
           .then(() => {
+            console.log('Cadastrou com sucesso!');
             history.push('/');
           });
       }}
@@ -66,14 +68,10 @@ function CadastroVideo() {
           suggestions={categoryTitles}
         />
 
-        <button type="submit">
-          Cadastrar
-        </button>
+        <ButtonForm> Cadastrar </ButtonForm>
+        <GoHome />
       </form>
 
-      <Link to="/cadastro/categoria">
-        Cadastrar Categoria
-      </Link>
     </PageDefault>
   );
 }

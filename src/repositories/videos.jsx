@@ -6,7 +6,7 @@ function createVideo(video) {
   return fetch(`${URL_VIDEOS}`, {
     method: 'POST',
     headers: {
-      'Content-type': 'aplication/json',
+      'Content-type': 'application/json',
     },
     body: JSON.stringify(video),
   })

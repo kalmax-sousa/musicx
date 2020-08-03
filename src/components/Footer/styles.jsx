@@ -1,19 +1,22 @@
 import styled from 'styled-components';
 
-
-export const FooterBase = styled.footer`
+const FooterBase = styled.footer`
   background: var(--gray);
   border-top: 2px solid var(--primary);
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   color: var(--white);
   text-align: center;
 
     > a{
       text-decoration: none;
-      font-size: 25px;
+      font-size: 20px;
+    }
+
+    a{
+      color: var(--purpleDark)
     }
 
     hr{
@@ -22,19 +25,16 @@ export const FooterBase = styled.footer`
     }
 
     p{
-      margin: 5px 0 16px
+      margin: 5px 0;
     }
 
-    img {
-      width: 55px;
-    }
-    
-  
   @media (max-width: 800px) {
     margin-bottom: 50px;
     
     >a{
-      font-size: 18px
+      font-size: 16px;
     }
   }
 `;
+
+export default FooterBase;
