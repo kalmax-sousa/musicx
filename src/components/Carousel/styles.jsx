@@ -19,7 +19,7 @@ export const Title = styled.h3`
   }
 `;
 
-export const ExtraLink = styled.span`
+export const Description = styled.span`
   margin-left: 16px;
   text-decoration: none;
   transition: opacity .3s;

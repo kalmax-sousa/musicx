@@ -9,7 +9,6 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-
 function VideoCard({ videoTitle, videoURL, categoryColor }) {
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
   return (
@@ -20,13 +19,17 @@ function VideoCard({ videoTitle, videoURL, categoryColor }) {
       style={{ borderColor: categoryColor || 'red' }}
       title={videoTitle}
     >
-      <Title 
-        style={{backgroundColor: categoryColor || 'red'}}
-      > {videoTitle} </Title>
+      <Title
+        style={{ backgroundColor: categoryColor || 'red' }}
+      >
+        {' '}
+        {videoTitle}
+        {' '}
+
+      </Title>
 
     </VideoCardContainer>
 
-    
   );
 }
 
