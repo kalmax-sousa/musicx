@@ -105,9 +105,8 @@ function CadastroCategoria() {
         </ContainerForm>
 
         <ContainerTable>
-          {categorias.length === 0 && (<Loading />)}
-
           <h1>Lista de Categorias</h1>
+
           <table>
             <thead>
               <tr>
@@ -116,6 +115,7 @@ function CadastroCategoria() {
                 <th>Cor</th>
               </tr>
             </thead>
+            {categorias.length === 0 && (<Loading />)}
             <tbody>
               {categorias.map((categoria) => (
                 <tr>

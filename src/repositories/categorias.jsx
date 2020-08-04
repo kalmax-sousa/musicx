@@ -35,7 +35,7 @@ function deleteCategory(id) {
     });
 }
 
-function updateCategory(category, id) {
+function updateCategory(id, category) {
   return fetch(`${URL_CATEGORIES}/${id}`, {
     method: 'PUT',
     headers: {

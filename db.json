@@ -1,10 +1,10 @@
 {
   "categorias": [
     {
-      "id": 1,
       "title": "Orgulho Negro",
       "description": "Músicas de Resistência",
-      "color": "#808080"
+      "color": "#808080",
+      "id": 1
     },
     {
       "id": 2,

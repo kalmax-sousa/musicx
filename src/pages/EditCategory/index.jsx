@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
+import { FiXCircle } from 'react-icons/fi';
 import useForm from '../../hooks/useForm';
 import PageDefault from '../../components/PageDefault';
 import FormField from '../../components/FormField';
@@ -29,6 +30,16 @@ function EditCategory(route) {
   return (
     <PageDefault>
       <Container>
+        <div>
+          <h1>
+            Editar Categoria:
+            {' '}
+            {title}
+          </h1>
+
+          <Link to="/cadastro/categoria"><FiXCircle /></Link>
+        </div>
+
         <form onSubmit={function handleSubmit(info) {
           info.preventDefault();
 
