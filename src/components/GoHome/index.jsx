@@ -9,8 +9,6 @@ const LinkHome = styled(Link)`
     display: inline-flex;
     font-size: 18px;
     margin-right: 5%;
-    position: absolute;
-    right: 0;
     text-decoration: none;
 
     svg{

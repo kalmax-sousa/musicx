@@ -32,7 +32,6 @@ const Elements = styled.div`
     a{
         color: var(--white);
         border-radius: 8px;
-        position: static;
         padding: 14px;
         background: var(--purpleDark);
         margin-right: 0;

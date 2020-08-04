@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory } from 'react-router-dom';
+import { FiDelete, FiEdit } from 'react-icons/fi';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
@@ -7,6 +8,10 @@ import Loading from '../../../components/Loading';
 import ButtonForm from '../../../components/ButtonForm';
 import GoHome from '../../../components/GoHome';
 import categoriesRepository from '../../../repositories/categorias';
+import {
+  Container, ContainerForm, ContainerTable, AreaButton,
+  Name, Description, Color, Edit, ButtonDelete,
+} from './styles';
 
 function CadastroCategoria() {
   const history = useHistory();
@@ -31,74 +36,107 @@ function CadastroCategoria() {
       });
   }, []);
 
+  function clearCategory(id) {
+    categoriesRepository.deleteCategory(id);
+
+    setCategorias(categorias.filter((categoria) => categoria.id !== id));
+  }
+
   return (
     <PageDefault>
-      <h1>
-        Cadastro de Categoria:
-        {' '}
-        {values.title}
-      </h1>
 
-      <form onSubmit={function handleSubmit(info) {
-        info.preventDefault();
+      <Container>
+        <ContainerForm>
+          <h1>
+            Cadastro de Categoria:
+          </h1>
 
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
+          <form onSubmit={function handleSubmit(info) {
+            info.preventDefault();
 
-        categoriesRepository.createCategory({
-          title: values.title,
-          description: values.description,
-          color: values.color,
-        })
-          .then(() => {
-            history.push('/');
-          });
+            setCategorias([
+              ...categorias,
+              values,
+            ]);
 
-        clearForm();
-      }}
-      >
+            categoriesRepository.createCategory({
+              title: values.title,
+              description: values.description,
+              color: values.color,
+            })
+              .then(() => {
+                history.push('/');
+              });
 
-        <FormField
-          label="Nome da Categoria: "
-          type="text"
-          name="title"
-          value={values.title}
-          onChange={handleChange}
-        />
+            clearForm();
+          }}
+          >
 
-        <FormField
-          as="textarea"
-          label="Descrição: "
-          type="textarea"
-          name="description"
-          value={values.description}
-          onChange={handleChange}
-        />
+            <FormField
+              label="Nome da Categoria: "
+              type="text"
+              name="title"
+              value={values.title}
+              onChange={handleChange}
+            />
 
-        <FormField
-          label="Cor: "
-          type="color"
-          name="color"
-          value={values.color}
-          onChange={handleChange}
-        />
+            <FormField
+              as="textarea"
+              label="Descrição: "
+              type="textarea"
+              name="description"
+              value={values.description}
+              onChange={handleChange}
+            />
 
-        <ButtonForm> Cadastrar </ButtonForm>
-        <GoHome />
+            <FormField
+              label="Cor: "
+              type="color"
+              name="color"
+              value={values.color}
+              onChange={handleChange}
+            />
+            <AreaButton>
+              <ButtonForm> Cadastrar </ButtonForm>
+              <GoHome />
+            </AreaButton>
 
-      </form>
+          </form>
+        </ContainerForm>
 
-      {categorias.length === 0 && (<Loading />)}
+        <ContainerTable>
+          {categorias.length === 0 && (<Loading />)}
 
-      <ul>
-        {categorias.map((categoria, indice) => (
-          <li key={`${categoria + indice}`}>
-            {categoria.title}
-          </li>
-        ))}
-      </ul>
+          <h1>Lista de Categorias</h1>
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Descriçao</th>
+                <th>Cor</th>
+              </tr>
+            </thead>
+            <tbody>
+              {categorias.map((categoria) => (
+                <tr>
+                  <Name>{categoria.title}</Name>
+                  <Description>{categoria.description}</Description>
+                  <Color>
+                    <div style={{ backgroundColor: categoria.color || 'red' }} />
+                  </Color>
+                  <td><Edit to={`/editar/categoria/${categoria.id}`}><FiEdit /></Edit></td>
+                  <td>
+                    <ButtonDelete onClick={() => clearCategory(categoria.id)}>
+                      <FiDelete />
+                    </ButtonDelete>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+
+        </ContainerTable>
+      </Container>
 
     </PageDefault>
   );
