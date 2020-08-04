@@ -25,6 +25,7 @@ function EditCategory(route) {
         setDescription(categoria.description);
         setColor(categoria.color);
       });
+    // eslint-disable-next-line
   }, []);
 
   return (

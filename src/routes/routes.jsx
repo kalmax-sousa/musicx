@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Home from '../pages/Home';
 import CadastroVideo from '../pages/cadastro/Video';
+import ListVideos from '../pages/ListVideos';
 import CadastroCategoria from '../pages/cadastro/Categoria';
 import EditCategory from '../pages/EditCategory';
 import Page404 from '../pages/Page404';
@@ -12,6 +13,7 @@ const Routes = () => (
     <Switch>
       <Route path="/" component={Home} exact />
       <Route path="/cadastro/video" component={CadastroVideo} />
+      <Route path="/videos" component={ListVideos} />
       <Route path="/cadastro/Categoria" component={CadastroCategoria} />
       <Route path="/editar/categoria/:id" component={EditCategory} />
       <Route component={Page404} />

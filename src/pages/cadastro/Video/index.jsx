@@ -7,6 +7,7 @@ import videosRepository from '../../../repositories/videos';
 import categoriesRepository from '../../../repositories/categorias';
 import ButtonForm from '../../../components/ButtonForm';
 import GoHome from '../../../components/GoHome';
+import { AreaButton, Container, ButtonLink } from './styles';
 
 function CadastroVideo() {
   const history = useHistory();
@@ -28,49 +29,58 @@ function CadastroVideo() {
 
   return (
     <PageDefault>
-      <h1>Cadastro de Vídeo</h1>
+      <Container>
 
-      <form onSubmit={(event) => {
-        event.preventDefault();
+        <h1>Cadastro de Vídeo</h1>
 
-        const categoryFinded = categorias.find((categoria) => categoria.title === values.categoria);
+        <form onSubmit={(event) => {
+          event.preventDefault();
 
-        videosRepository.createVideo({
-          title: values.title,
-          url: values.url,
-          categoriaId: categoryFinded.id,
-        })
-          .then(() => {
-            console.log('Cadastrou com sucesso!');
-            history.push('/');
-          });
-      }}
-      >
-        <FormField
-          label="Título do Vídeo: "
-          name="title"
-          value={values.title}
-          onChange={handleChange}
-        />
+          const categoryFinded = categorias
+            .find((categoria) => categoria.title === values.categoria);
 
-        <FormField
-          label="URL"
-          name="url"
-          value={values.url}
-          onChange={handleChange}
-        />
+          videosRepository.createVideo({
+            title: values.title,
+            url: values.url,
+            categoriaId: categoryFinded.id,
+          })
+            .then(() => {
+              console.log('Cadastrou com sucesso!');
+              history.push('/');
+            });
+        }}
+        >
+          <FormField
+            label="Título do Vídeo: "
+            name="title"
+            value={values.title}
+            onChange={handleChange}
+          />
 
-        <FormField
-          label="Categoria"
-          name="categoria"
-          value={values.categoria}
-          onChange={handleChange}
-          suggestions={categoryTitles}
-        />
+          <FormField
+            label="URL"
+            name="url"
+            value={values.url}
+            onChange={handleChange}
+          />
 
-        <ButtonForm> Cadastrar </ButtonForm>
-        <GoHome />
-      </form>
+          <FormField
+            label="Categoria"
+            name="categoria"
+            value={values.categoria}
+            onChange={handleChange}
+            suggestions={categoryTitles}
+          />
+
+          <AreaButton>
+            <ButtonForm> Cadastrar </ButtonForm>
+            <GoHome />
+          </AreaButton>
+
+          <ButtonLink to="/videos">Geranciar Vídeos</ButtonLink>
+
+        </form>
+      </Container>
 
     </PageDefault>
   );

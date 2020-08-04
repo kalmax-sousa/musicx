@@ -8,7 +8,6 @@ const LinkHome = styled(Link)`
     color: var(--purpleDark);
     display: inline-flex;
     font-size: 18px;
-    margin-right: 5%;
     text-decoration: none;
 
     svg{

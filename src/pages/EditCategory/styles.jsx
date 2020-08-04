@@ -6,6 +6,7 @@ const Container = styled.div`
     margin: 0 auto 16px;
     padding: 16px;
     width: 50%;
+    border: 2px solid var(--primary);
     
     >div{
         display: flex;
